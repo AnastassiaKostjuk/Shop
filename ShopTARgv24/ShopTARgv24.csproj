@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Spaceships\Createcs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Spaceships\Createcshtml.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopTARgv24.ApplicationServices\ShopTARgv24.ApplicationServices.csproj" />
+    <ProjectReference Include="..\ShopTARgv24.Data\ShopTARgv24.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\multipleFileUpload\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\multipleFileUpload\142c21f6-6752-4b51-842d-ee2ff7defbe9_spaceship.jpg" />
+    <None Include="wwwroot\multipleFileUpload\223d46af-feb6-4346-bd1c-70cc56eba5fa_spaceship.jpg" />
+    <None Include="wwwroot\multipleFileUpload\34ee158a-4eca-4446-8d36-ea06a1f98063_spaceship.jpg" />
+    <None Include="wwwroot\multipleFileUpload\a7258db9-8ae5-428a-8789-e21711ceec41_spaceship.jpg" />
+    <None Include="wwwroot\multipleFileUpload\d95fe4ea-3692-47dc-9545-e580ef2586af_spaceship.jpg" />
+  </ItemGroup>
+
+</Project>
